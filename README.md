@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004587-blue)](https://doi.org/10.82901/nemar.on004587)
+
 # Overview
 
 This dataset was collected in 2022-20233 and comprises electroencephalography, physiological and behavioural data acquired from 103 healthy individuals (ages: 21-45). The task was administered as part of a larger study.
