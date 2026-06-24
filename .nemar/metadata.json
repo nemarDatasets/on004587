@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "IllusionGameEEG_data",
+  "description": "This dataset comprises electroencephalography, physiological, and behavioral data collected from 103 healthy individuals (ages 21-45) during visual illusion perception tasks and resting-state recordings. Participants performed the Illusion Game task involving perceptual judgments on three classic visual illusions (Ebbinghaus, Müller-Lyer, and Vertical-Horizontal) with varying difficulty and illusion strength, followed by an 8-minute eyes-closed resting-state period. The dataset includes concurrent physiological monitoring (ECG, PPG, respiration) and behavioral responses, providing a comprehensive resource for investigating visual perception, illusion sensitivity, and associated neural and physiological correlates.",
+  "methods_description": "EEG signals were recorded using a 64-channel EasyCap with BrainVision Recording system at 10,000 Hz sampling rate, with electrodes placed according to the 10-5 system and impedance maintained below 12 kOhm. Physiological signals (ECG, PPG, respiration) were acquired at 1,000 Hz using PLUX OpenSignals software and BITalino Toolkit. ECG was collected using modified Lead II configuration, respiration via abdominal belt, and PPG via finger clip on the non-dominant hand. The experimental protocol included 384 illusion trials (6 blocks of 64 trials each) and an 8-minute resting-state period with eyes closed.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,48 +13,6 @@
     "Kirk, Stephanie": {},
     "Ngoi, Zi Liang": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds004587.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on004587",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004587",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.18112/openneuro.ds004587",
-      "identifier_type": "DOI",
-      "relation_type": "IsVersionOf"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "beh",
-    "eeg"
-  ],
-  "resource_type_specific": "Neuroimaging Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".gz",
-    ".json",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk"
-  ],
-  "description": "This dataset comprises electroencephalography, physiological, and behavioral data collected from 103 healthy participants (ages 21-45) during visual illusion perception tasks and resting-state recordings. Participants performed perceptual judgments on three classic visual illusions (Ebbinghaus, Müller-Lyer, and Vertical-Horizontal) with manipulated difficulty and illusion strength, followed by an 8-minute eyes-closed resting-state period. The multimodal dataset includes 64-channel EEG, electrocardiography, photoplethysmography, and respiration signals, providing a comprehensive resource for investigating visual perception, illusion sensitivity, and associated neural and physiological responses. Note: Due to technical errors, physiological data are missing for 2 subjects (sub-FFE111, sub-FFE116), behavioral data are missing for 3 subjects (sub-FFE117, sub-FFE139, sub-FFE146), and EEG data were collected twice for 1 subject (sub-FFE007).",
-  "methods_description": "EEG signals were recorded using a 64-channel EasyCap with BrainVision Recording system at 10,000 Hz sampling rate, with electrodes placed according to the 10-5 system and impedance maintained below 12 kOhm. Physiological signals (ECG, PPG, and respiration) were acquired at 1,000 Hz using PLUX OpenSignals software and BITalino Toolkit. ECG was recorded using modified Lead II configuration, respiration via abdominal belt, and PPG via finger clip on the non-dominant hand. Following the 8-minute eyes-closed resting-state period, an adapted version of the Amsterdam Resting State Questionnaire was administered to assess subjective resting state experience.",
   "keywords": [
     {
       "term": "EEG"
@@ -71,13 +31,24 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D017156"
     },
     {
-      "term": "resting state"
+      "term": "Respiration",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012119"
     },
     {
-      "term": "perceptual judgment"
+      "term": "resting-state"
     },
     {
-      "term": "multimodal neuroimaging"
+      "term": "perception"
+    },
+    {
+      "term": "visual perception"
+    },
+    {
+      "term": "physiological signals"
+    },
+    {
+      "term": "behavioral data"
     },
     {
       "term": "Ebbinghaus illusion"
@@ -87,19 +58,48 @@
     },
     {
       "term": "Vertical-Horizontal illusion"
-    },
-    {
-      "term": "respiration"
-    },
-    {
-      "term": "behavioral data"
-    },
-    {
-      "term": "physiological signals"
-    },
-    {
-      "term": "psychophysiology"
     }
   ],
-  "source_hash": "219c0faa98d97413c2b8f514c8070b4fd1bef0fe7d3308ec26b67ed4451df4fb"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on004587",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004587",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004587",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004587.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
+  "modalities": [
+    "beh",
+    "eeg"
+  ],
+  "sizes": [
+    "235.5 GB (545 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "b4867e3a60866093f9636ffe5392b77e6c98b86c8a603633bc53f04f33af823f"
 }
