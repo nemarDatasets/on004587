@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "IllusionGameEEG_data",
-  "description": "This dataset contains EEG, physiological (ECG, PPG, respiration) and behavioural recordings from 103 healthy adults aged 21-45. Participants completed an 8-minute eyes-closed resting state, followed by an Illusion Game task that measures sensitivity to the Ebbinghaus, Müller-Lyer and Vertical-Horizontal visual illusions. Stimuli were generated with Pyllusion, with varying task difficulty and illusion strength. The task was administered as part of a larger study.",
-  "methods_description": "EEG was recorded with a 64-channel EasyCap and BrainVision system using the 10-5 electrode placement, with impedance below 12 kOhm and a 10000 Hz sampling rate. Physiological signals (ECG, PPG, respiration) were recorded at 1000 Hz with PLUX OpenSignals and the BITalino toolkit. The Illusion Game comprised 384 trials in 6 blocks of 64, preceded by an 8-minute eyes-closed resting state and followed by an adapted Amsterdam Resting State Questionnaire.",
+  "description": "This dataset contains EEG, physiological (ECG, PPG, respiration) and behavioural recordings from 103 healthy adults aged 21-45, collected in 2022-2023 as part of a larger study. Participants completed an 8-minute eyes-closed resting state, followed by the Illusion Game. In this task they made perceptual judgements about the Ebbinghaus, Müller-Lyer and Vertical-Horizontal illusions, with task difficulty and illusion strength varied. The data are intended for investigating individual sensitivity to visual illusions as a general factor.",
+  "methods_description": "EEG was recorded with a 64-channel EasyCap and BrainVision system (10-5 layout, Cz reference, impedance below 12 kOhm, 10000 Hz sampling rate), with channels near the eyes used for EOG. ECG, PPG and respiration were recorded at 1000 Hz using PLUX OpenSignals and the BITalino toolkit. Stimuli were generated with Pyllusion. Each participant completed 384 illusion trials in six blocks of 64, after an 8-minute eyes-closed rest followed by an adapted Amsterdam Resting State Questionnaire.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,21 +21,21 @@
       "term": "visual illusions"
     },
     {
-      "term": "perception"
+      "term": "Illusion Game"
+    },
+    {
+      "term": "physiological signals"
     },
     {
       "term": "resting state"
     },
     {
-      "term": "Electrocardiography",
+      "term": "perception"
+    },
+    {
+      "term": "Electroencephalography",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
-    },
-    {
-      "term": "photoplethysmography"
-    },
-    {
-      "term": "Pyllusion"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
